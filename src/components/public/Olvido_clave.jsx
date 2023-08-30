@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
-export const Login = () => {
+export const Olvido_clave = () => {
   return (
     <Container>
       <LoginForm>
-        <Title> Admin Login</Title>
-        <Description>Por favor ingresa tu correo electrónico y tu contraseña</Description>
+        <Title> ¿Olvidaste la contraseña?</Title>
+        <Description>Introduce tu correo electrónico o número movil junto al (+51) para reestablecer tu contraseña.</Description>
         <Input type="text" placeholder="Correo electrónico" />
-        <Input type="password" placeholder="Contraseña" />
-        <Button>Iniciar sesión</Button> 
-        <Description2><a href="/olvidó-su-contraseña" target="_blank" rel="noopener"> <b>¿Olvidaste tu contraseña? </b></a> </Description2>       
-        <Description2>¿Aún no tienes cuenta?<a href="/crea-su-cuenta" target="_blank" rel="noopener"> <b>Crea tu cuenta</b> </a> </Description2>
+        <Button>Recuperar clave</Button> 
+        <Description2><a href="/Login" target="_blank" rel="noopener"> <b>Volver </b></a> </Description2>       
 
         </LoginForm>
     </Container>
@@ -32,7 +30,7 @@ const LoginForm = styled.form`
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align:center;
-  width: 350px;
+  width: 550px;
 `;
 
 const Title = styled.h1`
@@ -69,7 +67,7 @@ const Button = styled.button`
   text-align: center;
   background: #df0b75;
   color: #fff;
-  padding: 15px 50px;
+  padding: 15px 80px;
   border: none;
   border-radius: 6px;
   cursor: pointer;

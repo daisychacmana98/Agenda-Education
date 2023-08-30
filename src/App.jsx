@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Login, Footer } from './components'
+import { Login, Login2, Olvido_clave, Barralateral, Footer, Registro } from './components'
 
 
 
@@ -11,7 +11,13 @@ function App() {
 <>
     
     <Login/>
+    <Olvido_clave/>
+    <Barralateral/>
+    <Registro/>
     <Footer/>
+    <Login2/>
+
+
 
 </>
   )

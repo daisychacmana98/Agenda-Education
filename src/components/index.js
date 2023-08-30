@@ -1,2 +1,6 @@
 export * from "./public/Login" 
+export * from "./public/Login2" 
+export * from "./public/Olvido_clave" 
+export * from "./public/Barralateral" 
 export *  from "./public/Footer"
+export *  from "./public/Registro"

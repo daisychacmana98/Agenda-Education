@@ -1,17 +1,21 @@
 import styled from "styled-components";
 
-export const Login = () => {
+export const Registro = () => {
   return (
     <Container>
       <LoginForm>
-        <Title> Admin Login</Title>
-        <Description>Por favor ingresa tu correo electrónico y tu contraseña</Description>
+        <Title> Registro de Usuario</Title>
+        <Description>Por favor ingrese sus datos para registrarse</Description>
+        <Input type="text" placeholder="Nombres" />
+        <Input type="text" placeholder="Apellidos" />
+        <Input type="date" placeholder="Fecha de nacimiento" />
+        <Input type="tel" placeholder="Número de celular (+51)" value="+51" />
+
         <Input type="text" placeholder="Correo electrónico" />
         <Input type="password" placeholder="Contraseña" />
-        <Button>Iniciar sesión</Button> 
-        <Description2><a href="/olvidó-su-contraseña" target="_blank" rel="noopener"> <b>¿Olvidaste tu contraseña? </b></a> </Description2>       
-        <Description2>¿Aún no tienes cuenta?<a href="/crea-su-cuenta" target="_blank" rel="noopener"> <b>Crea tu cuenta</b> </a> </Description2>
-
+        <Input type="password" placeholder="Comfirmar contraseña" />
+        <Button>Enviar</Button> 
+        <Description2>¿Ya tienes una cuenta?<a href="/Login" target="_blank" rel="noopener"> <b>Entra aquí </b></a> </Description2>       
         </LoginForm>
     </Container>
   );
@@ -22,9 +26,9 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #75DF0B, #0B75DF);
+  background: linear-gradient(to bottom, #df0b75, #0B75DF);
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-`;
+`;s
 
 const LoginForm = styled.form`
   background: #fff;
@@ -32,7 +36,7 @@ const LoginForm = styled.form`
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align:center;
-  width: 350px;
+  width: 550px;
 `;
 
 const Title = styled.h1`

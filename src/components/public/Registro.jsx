@@ -28,7 +28,7 @@ const Container = styled.div`
   height: 100vh;
   background: linear-gradient(to bottom, #df0b75, #0B75DF);
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-`;s
+`;
 
 const LoginForm = styled.form`
   background: #fff;

@@ -1,26 +1,16 @@
-import { useState } from 'react'
-import { Login, Login2, Olvido_clave, Barralateral, Footer, Registro } from './components'
+import { ThemeProvider } from 'styled-components';
+import { Router } from './Router';
+import { theme } from './style';
+import { BrowserRouter } from 'react-router-dom';
 
-
-
-function App() {
-  const [count, setCount] = useState(10)
- 
-
-  return (
-<>
-    
-    <Login/>
-    <Olvido_clave/>
-    <Barralateral/>
-    <Registro/>
-    <Footer/>
-    <Login2/>
-
-
-
-</>
-  )
-}
-
-export default App
+export const App = () => {
+	return (
+		<>
+			<BrowserRouter>
+				<ThemeProvider theme={theme}>
+					<Router />
+				</ThemeProvider>
+			</BrowserRouter>
+		</>
+	);
+};

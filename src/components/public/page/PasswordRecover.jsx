@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { BaseLayout } from '../layout';
+import { Link } from 'react-router-dom';
+
 
 export const PasswordRecover = () => {
 	return (
@@ -20,9 +22,7 @@ export const PasswordRecover = () => {
 					</div>
 
 					<div className="button-item">
-						<a href="/Login" target="_blank" rel="noopener">
-							Volver
-						</a>
+						<Link to="/">Volver</Link>
 
 						<button>Recuperar clave</button>
 					</div>
@@ -37,7 +37,7 @@ const Container = styled.div`
 		background: #fff;
 		padding: 2em;
 		border-radius: 8px;
-		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		width: 550px;
 
@@ -73,7 +73,7 @@ const Container = styled.div`
 
 		button {
 			text-align: center;
-			background: #df0b75;
+			background: ${({ theme }) => theme.colors.primary};
 			color: #fff;
 			padding: 15px 80px;
 			border: none;
@@ -82,8 +82,17 @@ const Container = styled.div`
 			font-size: 15px;
 
 			&:hover {
-				background: #0b75df;
+				background: #${({ theme }) => theme.colors.secondary};
 			}
+		}
+		a {
+			font-size: 16px;
+			margin-bottom: 20px;
+			text-align: center;
+			font-style: normal;
+			color: #${({ theme }) => theme.colors.secondary};
+			font-weight: bold;
+			padding: 2px;
 		}
 	}
 `;

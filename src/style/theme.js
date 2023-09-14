@@ -5,7 +5,7 @@ export const theme = {
 		tertiary: '#75DF0B',
 
 		font1: '#999999',
-		font2: 'rgb(183, 189, 198)',
+		font2: '#df0b75',
 		font3: 'rgb(132, 142, 156)',
 
 		success: '#0ECB81',

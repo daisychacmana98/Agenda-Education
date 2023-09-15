@@ -1,8 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { BaseLayout } from '../layout';
+import { FaLock, FaUser } from 'react-icons/fa';
+import { BaseLayout } from '../../components/public';
 import { Link } from 'react-router-dom';
-import { FaUser, FaLock } from 'react-icons/fa';
+import styled from 'styled-components';
 
 export const Login = () => {
 	return (
@@ -14,12 +13,10 @@ export const Login = () => {
 					<div className="input-container">
 						<FaUser />
 						<input type="text" placeholder="Correo electrónico" />
-
 					</div>
 					<div className="input-container">
 						<FaLock />
 						<input type="password" placeholder="Contraseña" />
-
 					</div>
 					<div className="button-container">
 						<button>Iniciar sesión</button>

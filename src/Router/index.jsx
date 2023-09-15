@@ -1,5 +1,6 @@
 import { Link, Route, Routes } from 'react-router-dom';
-import { Login, PasswordRecover, Register } from '../components/public';
+import { PasswordRecover, Register } from '../components/public';
+import { Login } from '../pages';
 
 export const Router = () => {
 	return (
